@@ -69,7 +69,7 @@ def dashboard():
     rsvp_img = generate_pie_chart(df, 'RSVPStatus', 'RSVP Status Breakdown')
     attended_img = generate_pie_chart(df, 'Attended', 'Attendance Breakdown')
     
-    return render_template('dashboard.html', 
+    return render_template('index.html', 
                          table_data=df.to_dict('records'),
                          total_invited=total_invited,
                          total_attended=total_attended,
